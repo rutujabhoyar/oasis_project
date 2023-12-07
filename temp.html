@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="temp.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main">Temperature converter</div>
+        <div class="box">
+            <form class="cel">
+                <label for="Celcius">Celcius</label>
+                <input onchange="computeTemp(event)" type="Celcius" name="Celcius" id="Celcius" class="Celcius"
+                    placeholder="Enter Temperature">
+            </form>
+            <form class="fer">
+                <label for="Fehrenheit">Fehrenheit</label>
+                <input onchange="computeTemp(event)" type="Fehrenheit" name="Fehrenheit" id="Fehrenheit"
+                    class="Fehrenheit" placeholder="Enter Temperature">
+            </form>
+            <form class="kel">
+                <label for="Kelvin">Kelvin</label>
+                <input onchange="computeTemp(event)" type="Kelvin" name="Kelvin" id="Kelvin" class="Kelvin"
+                    placeholder="Enter Temperature">
+            </form>
+            <div class="button">
+                <button id="Convert">Convert</button>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="temp.js"></script>
+</html>
